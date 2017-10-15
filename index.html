@@ -85,7 +85,7 @@
 
 <!-- Mock Nav -->
 <nav>
-    <div class="nav-container">
+    <div class="wide-container">
         <ul class="first-nav" id="top-nav">
             <li class="col-md-1">
                 <a href="/">
@@ -127,14 +127,14 @@
     </div>
 </section>
 
-<section class="results-goals-supporters">
+<section id="results-goals-supporters">
     <div class="container">
-            <p>75% against our 2017 target</p>
-            <p>849 supporters</p>
+        <p>75% against our 2017 target</p>
+        <p>849 supporters</p>
     </div>
 </section>
 
-<section class="results-impressions">
+<section id="results-impressions">
     <div class="container">
         <h2>#SHAREHERJOURNEY</h2>
         <p>Total number of media impressions (so far): 32,783,592</p>
@@ -155,7 +155,7 @@
     </div>
 </section>
 
-<section class="results-media">
+<section id="results-media">
     <div class="container">
         <h2>Total stories published by the press: 130</h2>
 
@@ -176,7 +176,7 @@
     </div>
 </section>
 
-<section class="results-whats-next">
+<section id="results-whats-next">
     <div class="container">
             <h2>What's Next?</h2>
             <p>Because of your investment in Share Her Journey, our Industry team is now able to finalize activity that will launch in 2018. As we plan, we are reflecting on the outcomes from our Festival Talent development programmes and consulting with industry professionals, to ensure the programmes we develop are as relevant, high impact and effective as possible.</p>
@@ -186,7 +186,58 @@
 </section>
 
 <footer class="sticky" id="progress-footer">
+    <div class="wide-container progress-container">
+        <div class="progress-container__single" id="progress-start">
+            <p class="progress-icons">
+                <i class="material-icons">place</i>
+                <!-- <i class="material-icons">people_outline</i> -->
+            </p>
+        </div>
 
+        <div class="progress-bar">
+            <span class="progress-line" id="progress-line--to-goals"></span>
+        </div>
+
+        <div class="progress-container__single" id="progress-goals-supporters">
+            <p class="progress-icons">
+                <i class="material-icons">attach_money</i>
+                <!-- <i class="material-icons">people_outline</i> -->
+            </p>
+        </div>
+
+        <div class="progress-bar">
+            <span class="progress-line" id="progress-line--to-impressions"></span>
+        </div>
+        
+        <div class="progress-container__single" id="progress-impressions">
+            <p class="progress-icons">
+                <!-- <i class="material-icons">bubble_chart</i> -->
+                <i class="material-icons">question_answer</i>
+            </p>    
+        </div>
+
+        <div class="progress-bar">
+            <span class="progress-line" id="progress-line--to-media"></span>
+        </div>
+        
+        <div class="progress-container__single" id="progress-media">
+            <p class="progress-icons">
+                <i class="material-icons">wifi_tethering</i>
+            </p>
+        </div>
+
+        <div class="progress-bar">
+            <span class="progress-line" id="progress-line--to-next"></span>
+        </div>
+        
+        <div class="progress-container__single" id="progress-whats-next">
+            <p class="progress-icons">
+                <i class="material-icons">arrow_forward</i>
+                <!-- <i class="material-icons">refresh</i> -->
+            </p>
+        </div>
+    </div>
+    
 </footer>
 
 <script src="dist/js/app.min.js"></script>
