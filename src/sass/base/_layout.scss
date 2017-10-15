@@ -1,0 +1,97 @@
+body {
+    margin: 0;
+}
+.container {
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 50px 24px;
+    @media #{$medium-and-up} {
+        padding: 50px 0;
+    }
+}
+
+.shift-1 {
+    margin-left: 8.333333333%;
+}
+
+.shift-2 {
+    margin-left: 16.66666667%;
+}
+
+.shift-3 {
+    margin-left: 25%;
+}
+
+.shift-4 {
+    margin-left: 33.33333333%;
+}
+
+.col-6 {
+    width: 50%;
+}
+
+.intro {
+    padding-top: 100px;
+}
+
+.results-goals-supporters {
+    // background: $purple;
+    // color: $white;
+}
+
+.results-impressions {
+    // background: $blue;
+}
+
+.twitter-embed {
+    margin: 0 auto;
+    text-align: center;
+    position: relative;
+    z-index: 0;
+    twitterwidget {
+        position: relative;
+        margin: 0 auto;
+    }
+}
+
+.ig-embed {
+    text-align: center;
+    iframe {
+        margin: 0 auto !important;
+    }
+}
+
+.results-media {
+    // background: $pink;
+    // color: $white;
+
+    blockquote {
+        font-size: 32px;
+        font-style: italic;
+        margin: 24px 0 24px 0;
+    }
+    cite {
+        font-style: normal;
+        margin: 0 0 0 40px;
+        opacity: 0.8;
+    }
+}
+
+.sticky {
+    background: $yellow;
+    position: fixed;
+    height: 64px;
+    width: 100%;
+    // bottom: 0;
+    // margin-top: 64px;
+}
+
+footer {
+    bottom: -70px;
+    transition: all 0.5s ease;
+}
+
+footer.show {
+    bottom: 0;
+}
+
