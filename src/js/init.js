@@ -44,7 +44,7 @@ function isScrolledIntoView(el) {
     var min = window.innerHeight;
     console.log(min);
 
-    var isVisible = (elemTop <= (min-100)) && (elemBottom >= 0);
+    var isVisible = (elemTop <= (min-200)) && (elemBottom >= 0);
     console.log(scrollpos+' '+isVisible+' '+elemTop+' '+elemBottom);
     return isVisible;
     // document.body.scrollHeight;
@@ -60,22 +60,25 @@ var whatsNext       = document.getElementById("results-whats-next");
 window.addEventListener('scroll', function(){ 
     //Here you forgot to update the value
     scrollpos = window.scrollY;
+    // console.log(scrollpos);
 
+    // Show/Hide Top Nav 
     if(scrollpos > 50){
         add_nav_class_on_scroll();
     }
     else {
         remove_nav_class_on_scroll();
     }
-    // console.log(scrollpos);
 
-    if(scrollpos > 200){
+    // Show/Hide Progress Footer 
+    if(scrollpos > 24){
         add_footer_class_on_scroll();
     }
     else {
         remove_footer_class_on_scroll();
     }
 
+    // Grow/Shrink Progress Bars 
     if (isScrolledIntoView(goalsSupporters) == true) {
         progress_grow_on_scroll(line_to_goals)
     } else {

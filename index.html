@@ -11,6 +11,8 @@
 </head>
 <body>
 
+<div class="fixed-show-grid"></div>
+
 <!-- Original Nav -->
 <!-- <div class="navigation hidden-md-down">
     <ul class="first-nav main row">
@@ -117,9 +119,12 @@
 </nav>
 
 <section class="intro">
-    <div class="container">
+    <div class="wide-container">
         <h1>The journey so far...</h1>
-        <div class="col-6 shift-3">
+        <h2>
+            A snapshot of Share Her Journey, made possible with your support!
+        </h2>
+        <div class="col-6">
             <p>Thank you for your incredible support of Share Her Journey - TIFF’s commitment to increasing opportunities for women in the film industry. With a goal to raise $3 million over the next five years, your generosity has created overwhelming momentum to make our aims a reality.</p>
 
             <p> We’re delighted to share highlights since the initiative launched in July. It’s so important to us to let you know your gift is making a difference, and we will continue to keep you informed as Share Her Journey grows and evolves.</p>
@@ -129,15 +134,23 @@
 
 <section id="results-goals-supporters">
     <div class="container">
-        <p>75% against our 2017 target</p>
-        <p>849 supporters</p>
+        <!-- <div class="flex-container"> -->
+            <p>75% against our 2017 target</p>
+            <p>849 supporters</p>
+            <p>That's like selling out <a href="https://www.tiff.net/events/?tab=spaces">TIFF Cinemas 1 &amp; 2</a><br/>  (with a couple rush tickets available)</p>
+        <!-- </div> -->
     </div>
 </section>
 
 <section id="results-impressions">
     <div class="container">
         <h2>#SHAREHERJOURNEY</h2>
-        <p>Total number of media impressions (so far): 32,783,592</p>
+        <p id="impressions-number">
+            32,783,59
+            <span>2</span>
+            <span id="impressions-number--hidden">3</span>
+        </p>
+        <p>Total number of media impressions (so far)</p>
 
         <div class="twitter-embed">
             <blockquote class="twitter-tweet" data-lang="en"><p lang="en" dir="ltr">Good afternoon from <a href="https://twitter.com/hashtag/Toronto?src=hash&amp;ref_src=twsrc%5Etfw">#Toronto</a>. Honored to meet my fellow <a href="https://twitter.com/TIFF_NET?ref_src=twsrc%5Etfw">@TIFF_NET</a> <a href="https://twitter.com/hashtag/ShareHerJourney?src=hash&amp;ref_src=twsrc%5Etfw">#ShareHerJourney</a> ambassador Carol Nguyen. What an inspiration <a href="https://twitter.com/hashtag/TIFF17?src=hash&amp;ref_src=twsrc%5Etfw">#TIFF17</a> <a href="https://t.co/pCIv1VHdYu">pic.twitter.com/pCIv1VHdYu</a></p>&mdash; Erika Olde (@EJNY16) <a href="https://twitter.com/EJNY16/status/906584657415872514?ref_src=twsrc%5Etfw">September 9, 2017</a></blockquote>
@@ -185,12 +198,17 @@
     </div>
 </section>
 
+<footer class="credits">
+
+</footer>
+
 <footer class="sticky" id="progress-footer">
     <div class="wide-container progress-container">
         <div class="progress-container__single" id="progress-start">
             <p class="progress-icons">
                 <i class="material-icons">place</i>
                 <!-- <i class="material-icons">people_outline</i> -->
+                <span>Start</span>
             </p>
         </div>
 
@@ -202,6 +220,7 @@
             <p class="progress-icons">
                 <i class="material-icons">attach_money</i>
                 <!-- <i class="material-icons">people_outline</i> -->
+                <span>Support</span>
             </p>
         </div>
 
@@ -213,6 +232,7 @@
             <p class="progress-icons">
                 <!-- <i class="material-icons">bubble_chart</i> -->
                 <i class="material-icons">question_answer</i>
+                <span>Social</span>
             </p>    
         </div>
 
@@ -223,6 +243,7 @@
         <div class="progress-container__single" id="progress-media">
             <p class="progress-icons">
                 <i class="material-icons">wifi_tethering</i>
+                <span>Media</span>
             </p>
         </div>
 
@@ -234,6 +255,7 @@
             <p class="progress-icons">
                 <i class="material-icons">arrow_forward</i>
                 <!-- <i class="material-icons">refresh</i> -->
+                <span>Next</span>
             </p>
         </div>
     </div>

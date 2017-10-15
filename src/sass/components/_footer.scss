@@ -8,8 +8,8 @@
     // margin-top: 64px;
 }
 
-footer {
-    bottom: -70px;
+footer.sticky {
+    bottom: -60px;
     transition: all 0.5s ease;
     i {
         color: $black;
@@ -25,6 +25,7 @@ footer.show {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    margin-top: 12px;
 }
 
 .progress-container__single {
@@ -35,11 +36,18 @@ footer.show {
     // >p, >div {
     //     display:inline-block;
     // }
-    // >p {
-    //     // width: 10%; 
-    //     // margin: 0;
-    //     text-align: center;  
-    // }
+    >p {
+        // width: 10%; 
+        margin: 0;
+        text-align: center;  
+        span {
+            color: rgba(0,0,0,0.5);
+            display: block;
+            font-size: 10px;
+            line-height: 10px;
+            text-transform: uppercase;
+        }
+    }
 }
 
 .progress-bar {

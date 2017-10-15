@@ -1,0 +1,25 @@
+#results-impressions {
+    background: $blue;
+}
+
+.twitter-embed {
+    margin: 0 auto;
+    text-align: center;
+    position: relative;
+    z-index: 0;
+    twitterwidget {
+        position: relative;
+        margin: 0 auto;
+    }
+}
+
+.ig-embed {
+    text-align: center;
+    iframe {
+        margin: 0 auto !important;
+    }
+}
+
+#impressions-number--hidden {
+    display: none;
+}
