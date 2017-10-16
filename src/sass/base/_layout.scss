@@ -29,6 +29,9 @@ section {
     position: relative;
     // min-height: 100vh;
     vertical-align: middle;
+    @media #{$medium-and-up} {
+        padding: 56px 0;
+    }
 }
 
 .container {
@@ -37,9 +40,9 @@ section {
     vertical-align: middle;
     max-width: 960px;
     margin: 0 auto;
-    padding: 50px 24px;
+    padding: 56px 24px;
     @media #{$medium-and-up} {
-        padding: 50px 0;
+        padding: 56px 0;
     }
 }
 
@@ -47,6 +50,13 @@ section {
     max-width: 1120px;
     margin: 0 auto;
     padding: 0 20px;
+    @media #{$medium-and-up} {
+        padding: 0;
+    }
+}
+
+section .wide-container {
+    padding: 40px 20px;
     @media #{$medium-and-up} {
         padding: 0;
     }
@@ -64,11 +74,15 @@ section {
 }
 
 .shift-2 {
-    margin-left: 16.66666667%;
+    @media #{$medium-and-up} {
+        margin-left: 16.66666667% !important;
+    }
 }
 
 .shift-3 {
-    margin-left: 25%;
+    @media #{$medium-and-up} {
+        margin-left: 25% !important;
+    }
 }
 
 .shift-4 {

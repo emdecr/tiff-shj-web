@@ -1,9 +1,51 @@
 #results-impressions {
     background: $blue;
+    color: $white;
+    // padding-top: 88px;
+    h4 {
+        font-size: 32px;
+        margin-bottom: 0;
+    }
+}
+
+#impressions-number {
+    color: $purple;
+}
+
+.media-explore {
+    // opacity: 0.8;
+    // text-align: center;
+    a {
+        color: $white;
+        color: $purple;
+        text-decoration: none;
+        border: none;
+        font-size: 24px;
+        margin: 0 4px;
+        &:hover {
+            color: lighten($purple, 10);
+        }
+    }
+}
+
+.embeds {
+    @media #{$medium-and-up} {
+        display: flex;
+        justify-content: space-between;
+        padding: 32px 0;
+    }
+}
+
+.twitter-embed,
+.ig-embed {
+    @media #{$medium-and-up} {
+        display: inline-block;
+        width: 30%;
+    }
 }
 
 .twitter-embed {
-    margin: 0 auto;
+    // margin: 0 auto;
     text-align: center;
     position: relative;
     z-index: 0;

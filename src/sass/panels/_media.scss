@@ -1,15 +1,128 @@
 #results-media {
-    // background: $pink;
-    // color: $white;
+    background: $orange;
+    color: $white;
+    padding-bottom: 0;
 
     blockquote {
-        font-size: 32px;
+        font-size: 20px;
+        line-height: 28px;
         font-style: italic;
-        margin: 24px 0 24px 0;
+        // margin: 20px 20px;
+        padding: 24px;
+        position: relative;
+        #start-quote {
+            position: absolute;
+            top: 0px;
+            left: -40px;
+            opacity: 0.3;
+            font-size: 64px;
+            transform: scale(-1, 1);
+        }
+        @media #{$medium-and-up} {
+            font-size: 24px;
+            line-height: 32px;
+            margin: 40px 0 24px 0;
+            padding: 0;
+            #start-quote {
+                top: -24px;
+                left: -56px;
+                opacity: 0.3;
+                font-size: 64px;
+            }
+        }
     }
     cite {
         font-style: normal;
         margin: 0 0 0 40px;
-        opacity: 0.8;
+        opacity: 0.7;
+        a {
+            color: $yellow;
+        }
+    }
+}
+
+p.media-number {
+    text-align: center;
+    color: $green;
+}
+
+.media-blocks {
+    padding: 24px 0;
+    background: $green;
+    color: $yellow;
+    .wide-container {
+        @media #{$small-and-down} {
+            padding-left: 0;
+            padding-right: 0;        
+        }
+    }
+    @media #{$medium-and-up} {
+        padding: 50px 0;        
+    }
+}
+
+.flex-col-third,
+.flex-col-half {
+    text-align: center;
+    >a {
+        &:hover {
+            h5 {
+                color: $orange;
+            }
+        }
+    }
+}
+
+.flex-inner-wrapper {
+    padding: 0px 16px;
+    @media #{$medium-and-up} {
+        padding: 56px 24px;
+    }
+}
+
+.flex-col-third {
+    >a {
+        color: $yellow;
+        display: block;
+        border-bottom: 1px solid rgba(255, 253, 56, 0.5);
+    }      
+    @media #{$small-and-down} {     
+        >a:first-child {
+            border-top: 1px solid rgba(255, 253, 56, 0.5);
+        }
+    }
+    @media #{$medium-and-up} {
+        display: flex;
+        >a {
+            width: 33.33%;
+            border-bottom: 2px solid $yellow;
+        }      
+        >a:first-child {
+            border-right: 2px solid $yellow;
+        }
+        >a:last-child {
+            border-left: 2px solid $yellow;
+        }
+    }
+}
+
+.flex-col-half {
+    >a {
+        color: $yellow;
+        display: block;
+        border-bottom: 1px solid rgba(255, 253, 56, 0.5);
+    } 
+    @media #{$medium-and-up} {
+        display: flex;
+        >a {
+            width: 50%;
+            border-bottom: 0;
+        }  
+        >a:first-child {
+            border-right: 1px solid $yellow;
+        }   
+        >a:last-child {
+            border-left: 1px solid $yellow;
+        }   
     }
 }

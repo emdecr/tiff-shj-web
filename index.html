@@ -3,11 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+    <link rel="apple-touch-icon" sizes="180x180" href="src/images/apple-touch-icon.png"><link rel="icon" type="image/png" href="src/images/favicon-32x32.png" sizes="32x32"><link rel="icon" type="image/png" href="src/images/favicon-16x16.png" sizes="16x16">
     <title>Share Her Journey</title>
     <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"> -->
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     <link rel="stylesheet" href="dist/css/style.css">
     <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700" rel="stylesheet">
+    <link rel="stylesheet" href="//cdn.materialdesignicons.com/2.0.46/css/materialdesignicons.min.css">
     
 </head>
 <body>
@@ -119,7 +121,7 @@
     </div>
 </nav>
 
-<section class="intro">
+<section class="intro" id="start">
     <div class="wide-container">
         <h1>The journey so far...</h1>
         <h2>
@@ -134,131 +136,199 @@
 </section>
 
 <section id="results-goals-supporters">
-    <div class="container">
-        <!-- <div class="flex-container"> -->
-            <p>75% against our 2017 target</p>
-            <p>849 supporters</p>
-            <p>That's like selling out <a href="https://www.tiff.net/events/?tab=spaces">TIFF Cinemas 1 &amp; 2</a><br/>  (with a couple rush tickets available)</p>
-        <!-- </div> -->
+    <div class="wide-container">
+        <h3 class="ta--center">The Results</h3>
+        <div class="goals-sections">
+            <div class="goal-meter">
+                <div class="meter" id="the-meter"></div>
+            </div>
+            <div class="goals-text">
+                <p>75% against our 2017 target</p>
+                <p><span class="large-type">849</span><br/> <span class="med-type">supporters</span></p>
+                <p>That's like selling out <a href="https://www.tiff.net/events/?tab=spaces">TIFF Cinemas 1 &amp; 2</a><br/>  <span class="small">(with a couple rush tickets available...)</span></p>
+            </div>
+        </div>
     </div>
 </section>
 
 <section id="results-impressions">
-    <div class="container">
-        <h2>#SHAREHERJOURNEY</h2>
-        <p id="impressions-number">
-            32,783,59
-            <span>2</span>
-            <span id="impressions-number--hidden">3</span>
+    <div class="wide-container">
+        <h3 class="">#SHAREHERJOURNEY</h3>
+        <p class="wow fadeIn large-type" id="impressions-number">
+            32,783,59<span>1</span>
+            <span id="impressions-number--hidden">2</span>
         </p>
-        <p>Total number of media impressions (so far)</p>
+        <h4 class="">Total number of media impressions (so far)</h4>
+        <p class="media-explore">
+            Explore via:
+            <a href="https://twitter.com/hashtag/shareherjourney" target="_blank"><i class="mdi mdi-twitter"></i></a>
+            <a href="https://www.instagram.com/explore/tags/shareherjourney/" target="_blank"><i class="mdi mdi-instagram"></i></a>
+        </p>
 
-        <div class="twitter-embed">
-            <blockquote class="twitter-tweet" data-lang="en"><p lang="en" dir="ltr">Good afternoon from <a href="https://twitter.com/hashtag/Toronto?src=hash&amp;ref_src=twsrc%5Etfw">#Toronto</a>. Honored to meet my fellow <a href="https://twitter.com/TIFF_NET?ref_src=twsrc%5Etfw">@TIFF_NET</a> <a href="https://twitter.com/hashtag/ShareHerJourney?src=hash&amp;ref_src=twsrc%5Etfw">#ShareHerJourney</a> ambassador Carol Nguyen. What an inspiration <a href="https://twitter.com/hashtag/TIFF17?src=hash&amp;ref_src=twsrc%5Etfw">#TIFF17</a> <a href="https://t.co/pCIv1VHdYu">pic.twitter.com/pCIv1VHdYu</a></p>&mdash; Erika Olde (@EJNY16) <a href="https://twitter.com/EJNY16/status/906584657415872514?ref_src=twsrc%5Etfw">September 9, 2017</a></blockquote>
-            <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
-        </div>
+        <div class="embeds">
+            <div class="twitter-embed">
+                <blockquote class="twitter-tweet" data-lang="en"><p lang="en" dir="ltr">Good afternoon from <a href="https://twitter.com/hashtag/Toronto?src=hash&amp;ref_src=twsrc%5Etfw">#Toronto</a>. Honored to meet my fellow <a href="https://twitter.com/TIFF_NET?ref_src=twsrc%5Etfw">@TIFF_NET</a> <a href="https://twitter.com/hashtag/ShareHerJourney?src=hash&amp;ref_src=twsrc%5Etfw">#ShareHerJourney</a> ambassador Carol Nguyen. What an inspiration <a href="https://twitter.com/hashtag/TIFF17?src=hash&amp;ref_src=twsrc%5Etfw">#TIFF17</a> <a href="https://t.co/pCIv1VHdYu">pic.twitter.com/pCIv1VHdYu</a></p>&mdash; Erika Olde (@EJNY16) <a href="https://twitter.com/EJNY16/status/906584657415872514?ref_src=twsrc%5Etfw">September 9, 2017</a></blockquote>
+                <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+            </div>
 
-        <div class="ig-embed">
-            <blockquote class="instagram-media" data-instgrm-captioned data-instgrm-version="7" style=" background:#FFF; border:0; border-radius:3px; box-shadow:0 0 1px 0 rgba(0,0,0,0.5),0 1px 10px 0 rgba(0,0,0,0.15); margin: 1px; max-width:658px; padding:0; width:99.375%; width:-webkit-calc(100% - 2px); width:calc(100% - 2px);"><div style="padding:8px;"> <div style=" background:#F8F8F8; line-height:0; margin-top:40px; padding:40.416666666666664% 0; text-align:center; width:100%;"> <div style=" background:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACwAAAAsCAMAAAApWqozAAAABGdBTUEAALGPC/xhBQAAAAFzUkdCAK7OHOkAAAAMUExURczMzPf399fX1+bm5mzY9AMAAADiSURBVDjLvZXbEsMgCES5/P8/t9FuRVCRmU73JWlzosgSIIZURCjo/ad+EQJJB4Hv8BFt+IDpQoCx1wjOSBFhh2XssxEIYn3ulI/6MNReE07UIWJEv8UEOWDS88LY97kqyTliJKKtuYBbruAyVh5wOHiXmpi5we58Ek028czwyuQdLKPG1Bkb4NnM+VeAnfHqn1k4+GPT6uGQcvu2h2OVuIf/gWUFyy8OWEpdyZSa3aVCqpVoVvzZZ2VTnn2wU8qzVjDDetO90GSy9mVLqtgYSy231MxrY6I2gGqjrTY0L8fxCxfCBbhWrsYYAAAAAElFTkSuQmCC); display:block; height:44px; margin:0 auto -44px; position:relative; top:-22px; width:44px;"></div></div> <p style=" margin:8px 0 0 0; padding:0 4px;"> <a href="https://www.instagram.com/p/BY5r_50jQnX/" style=" color:#000; font-family:Arial,sans-serif; font-size:14px; font-style:normal; font-weight:normal; line-height:17px; text-decoration:none; word-wrap:break-word;" target="_blank">Half the 38 feature docs at #TIFF17 are directed by women. Several of them gathered yesterday at a Filmmakers Brunch. From L to R: Tracy Heather Strain (Sighted Eyes / Feeling Heart); Erika Cohn (The Judge); Violeta Ayala (Cocaine Prison); Heidi Ewing (One of Us); Alanis Obomsawin (Our People Will Be Healed); Hawa Essuman (Silas); Mila Turajlic (The Other Side of Everything); Kate Novack ( The Gospel According to Andre); Anjali Nayar (Silas). @silasmovie @tiff_net #tiff17 #documentary @wift.toronto #film #shareherjourney #womeninfilm #silasmovie #silassiakor #toronto @ekuahawa</a></p> <p style=" color:#c9c8cd; font-family:Arial,sans-serif; font-size:14px; line-height:17px; margin-bottom:0; margin-top:8px; overflow:hidden; padding:8px 0 7px; text-align:center; text-overflow:ellipsis; white-space:nowrap;">A post shared by Anjali Nayar (@anjalinayar) on <time style=" font-family:Arial,sans-serif; font-size:14px; line-height:17px;" datetime="2017-09-11T12:50:53+00:00">Sep 11, 2017 at 5:50am PDT</time></p></div></blockquote> <script async defer src="//platform.instagram.com/en_US/embeds.js"></script>
-        </div>
+            <div class="ig-embed">
+                <blockquote class="instagram-media" data-instgrm-captioned data-instgrm-version="7" style=" background:#FFF; border:0; border-radius:3px; box-shadow:0 0 1px 0 rgba(0,0,0,0.5),0 1px 10px 0 rgba(0,0,0,0.15); margin: 1px; max-width:658px; padding:0; width:99.375%; width:-webkit-calc(100% - 2px); width:calc(100% - 2px);"><div style="padding:8px;"> <div style=" background:#F8F8F8; line-height:0; margin-top:40px; padding:40.416666666666664% 0; text-align:center; width:100%;"> <div style=" background:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACwAAAAsCAMAAAApWqozAAAABGdBTUEAALGPC/xhBQAAAAFzUkdCAK7OHOkAAAAMUExURczMzPf399fX1+bm5mzY9AMAAADiSURBVDjLvZXbEsMgCES5/P8/t9FuRVCRmU73JWlzosgSIIZURCjo/ad+EQJJB4Hv8BFt+IDpQoCx1wjOSBFhh2XssxEIYn3ulI/6MNReE07UIWJEv8UEOWDS88LY97kqyTliJKKtuYBbruAyVh5wOHiXmpi5we58Ek028czwyuQdLKPG1Bkb4NnM+VeAnfHqn1k4+GPT6uGQcvu2h2OVuIf/gWUFyy8OWEpdyZSa3aVCqpVoVvzZZ2VTnn2wU8qzVjDDetO90GSy9mVLqtgYSy231MxrY6I2gGqjrTY0L8fxCxfCBbhWrsYYAAAAAElFTkSuQmCC); display:block; height:44px; margin:0 auto -44px; position:relative; top:-22px; width:44px;"></div></div> <p style=" margin:8px 0 0 0; padding:0 4px;"> <a href="https://www.instagram.com/p/BY5r_50jQnX/" style=" color:#000; font-family:Arial,sans-serif; font-size:14px; font-style:normal; font-weight:normal; line-height:17px; text-decoration:none; word-wrap:break-word;" target="_blank">Half the 38 feature docs at #TIFF17 are directed by women. Several of them gathered yesterday at a Filmmakers Brunch. From L to R: Tracy Heather Strain (Sighted Eyes / Feeling Heart); Erika Cohn (The Judge); Violeta Ayala (Cocaine Prison); Heidi Ewing (One of Us); Alanis Obomsawin (Our People Will Be Healed); Hawa Essuman (Silas); Mila Turajlic (The Other Side of Everything); Kate Novack ( The Gospel According to Andre); Anjali Nayar (Silas). @silasmovie @tiff_net #tiff17 #documentary @wift.toronto #film #shareherjourney #womeninfilm #silasmovie #silassiakor #toronto @ekuahawa</a></p> <p style=" color:#c9c8cd; font-family:Arial,sans-serif; font-size:14px; line-height:17px; margin-bottom:0; margin-top:8px; overflow:hidden; padding:8px 0 7px; text-align:center; text-overflow:ellipsis; white-space:nowrap;">A post shared by Anjali Nayar (@anjalinayar) on <time style=" font-family:Arial,sans-serif; font-size:14px; line-height:17px;" datetime="2017-09-11T12:50:53+00:00">Sep 11, 2017 at 5:50am PDT</time></p></div></blockquote> <script async defer src="//platform.instagram.com/en_US/embeds.js"></script>
+            </div>
 
-        <div class="twitter-embed">
-            <blockquote class="twitter-tweet" data-lang="en"><p lang="en" dir="ltr">Here&#39;s to all the women in front of &amp; behind the 🎥, like my favorite <a href="https://twitter.com/Stana_Katic?ref_src=twsrc%5Etfw">@Stana_Katic</a>. <a href="https://twitter.com/hashtag/shareherjourney?src=hash&amp;ref_src=twsrc%5Etfw">#shareherjourney</a> <a href="https://twitter.com/hashtag/womeninfilm?src=hash&amp;ref_src=twsrc%5Etfw">#womeninfilm</a> <a href="https://twitter.com/hashtag/girlpower?src=hash&amp;ref_src=twsrc%5Etfw">#girlpower</a> <a href="https://twitter.com/hashtag/tiff?src=hash&amp;ref_src=twsrc%5Etfw">#tiff</a> <a href="https://twitter.com/hashtag/tiff17?src=hash&amp;ref_src=twsrc%5Etfw">#tiff17</a> <a href="https://t.co/boWDKjW5f8">pic.twitter.com/boWDKjW5f8</a></p>&mdash; Irish Gibson (@PolymerGirl23) <a href="https://twitter.com/PolymerGirl23/status/906344054383837184?ref_src=twsrc%5Etfw">September 9, 2017</a></blockquote>
-            <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+            <div class="twitter-embed">
+                <blockquote class="twitter-tweet" data-lang="en"><p lang="en" dir="ltr">Here&#39;s to all the women in front of &amp; behind the 🎥, like my favorite <a href="https://twitter.com/Stana_Katic?ref_src=twsrc%5Etfw">@Stana_Katic</a>. <a href="https://twitter.com/hashtag/shareherjourney?src=hash&amp;ref_src=twsrc%5Etfw">#shareherjourney</a> <a href="https://twitter.com/hashtag/womeninfilm?src=hash&amp;ref_src=twsrc%5Etfw">#womeninfilm</a> <a href="https://twitter.com/hashtag/girlpower?src=hash&amp;ref_src=twsrc%5Etfw">#girlpower</a> <a href="https://twitter.com/hashtag/tiff?src=hash&amp;ref_src=twsrc%5Etfw">#tiff</a> <a href="https://twitter.com/hashtag/tiff17?src=hash&amp;ref_src=twsrc%5Etfw">#tiff17</a> <a href="https://t.co/boWDKjW5f8">pic.twitter.com/boWDKjW5f8</a></p>&mdash; Irish Gibson (@PolymerGirl23) <a href="https://twitter.com/PolymerGirl23/status/906344054383837184?ref_src=twsrc%5Etfw">September 9, 2017</a></blockquote>
+                <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+            </div>
         </div>
     </div>
 </section>
 
 <section id="results-media">
     <div class="container">
-        <h2>Total stories published by the press: 130</h2>
+        <h3 class="ta--center">Total stories published<br/>by the press:</h3>
+        <p class="wow fadeInUp media-number large-type">130</p>
+    </div>
+    <div class="media-blocks">
+        <h4 class="ta--center">Special reads include:</h4> 
+        <div class="wide-container wow fadeIn" data-wow-delay="1s">
+            <div class="media-flex-container">
+                <div class="flex-col-third">
+                    <a href="https://nowtoronto.com/movies/features/tiff-unveils-five-year-plan-to-boost-female-representation-i/" class="flex-col-third__single" target="_blank">
+                        <div class="flex-inner-wrapper">
+                            <h5>
+                                NOW Magazine
+                            </h5>
+                        </div>
+                    </a>
+                    <a href="http://variety.com/2017/film/news/toronto-film-festival-female-directors-campaign-1202490942/" class="flex-col-third__single" target="_blank">
+                        <div class="flex-inner-wrapper">
+                            <h5>
+                                Variety
+                            </h5>
+                        </div>
+                    </a>
+                    <a href="https://www.forbes.com/sites/pauleannareid/2017/09/06/toronto-film-festival-launches-campaign-to-support-emerging-female-filmmakers/#2decb4236f9a" class="flex-col-third__single" target="_blank">
+                        <div class="flex-inner-wrapper">
+                            <h5>
+                                Forbes
+                            </h5>
+                        </div>
+                    </a>
+                </div>
+                <div class="flex-col-half">
+                    <a href="http://www.cbc.ca/listen/shows/metro-morning/segment/13315339" class="flex-col-half__single" target="_blank">
+                        <div class="flex-inner-wrapper">
+                            <h5>
+                                Metro Morning interview with TIFF Artistic Director, Cameron Bailey, and Director of Industry, Kathleen Drumm
+                            </h5>
+                        </div>
+                    </a>
+                    <a href="http://toronto.citynews.ca/video/2017/09/07/priyanka-chopra-lends-her-voice-to-tiff-initative-aimed-at-supporting-female-filmmakers/" class="flex-col-half__single" target="_blank">
+                        <div class="flex-inner-wrapper">
+                            <h5>
+                                CityNews interview with Priyanka Chopra, TIFF Soirée special guest and Share Her Journey Ambassador
+                            </h5>
+                        </div>
+                    </a>
+                </div>
+            </div>
 
-        <h3>Special reads include:</h3> 
-        <ul>
-            <li>NOW Magazine</li>
-            <li>Variety</li>
-            <li>Forbes</li>
-            <li>Metro Morning interview with TIFF Artistic Director, Cameron Bailey, and Director of Industry, Kathleen Drumm</li>
-            <li>CityNews interview with Priyanka Chopra, TIFF Soirée special guest and Share Her Journey Ambassador</li>
-        </ul>
-
-        <blockquote class="wow fadeIn">
-            And that’s the magic of a program like Share Her Journey. By stepping up to create the campaign, TIFF has not only taken on the issue of gender inequity in the film industry, but they have also created a platform which inspires others to contribute to the mentorship and sponsorship of women behind and in front of the camera. They’ve extended their reach by inviting others to lend a
-            hand. The impact of that will be felt, not only by those who get to participate in Share Her Journey, but across the film industry and beyond. Because when the playing field is leveled for women in any industry, everyone benefits.
-        </blockquote>
-        <cite>&mdash; Pauleanna Reid, Forbes</cite>
+            <blockquote class="wow fadeInUp col-8 shift-2">
+                <i class="material-icons" id="start-quote">format_quote</i>
+                And that’s the magic of a program like Share Her Journey. By stepping up to create the campaign, TIFF has not only taken on the issue of gender inequity in the film industry, but they have also created a platform which inspires others to contribute to the mentorship and sponsorship of women behind and in front of the camera. They’ve extended their reach by inviting others to lend a
+                hand. The impact of that will be felt, not only by those who get to participate in Share Her Journey, but across the film industry and beyond. 
+                <span class="underline--yellow">Because when the playing field is leveled for women in any industry, everyone benefits.</span>
+            </blockquote>
+            <cite class="wow fadeIn col-8 shift-2">&mdash; Pauleanna Reid, <a href="https://www.forbes.com/sites/pauleannareid/2017/09/06/toronto-film-festival-launches-campaign-to-support-emerging-female-filmmakers/#2decb4236f9a" target="_blank" class="underline--yellow">Forbes</a></cite>
+        </div>
     </div>
 </section>
 
 <section id="results-whats-next">
     <div class="container">
-            <h2>What's Next?</h2>
+            <h3>What's Next?</h3>
             <p>Because of your investment in Share Her Journey, our Industry team is now able to finalize activity that will launch in 2018. As we plan, we are reflecting on the outcomes from our Festival Talent development programmes and consulting with industry professionals, to ensure the programmes we develop are as relevant, high impact and effective as possible.</p>
             
             <p>Thank you for joining this movement. We look forward to continuing this journey with you.</p>
     </div>
 </section>
 
-<footer class="credits">
+<section class="cta">
+    <p>
+        <a href="https://oss.ticketmaster.com/aps/tiff/EN/link/donation/donate/browse?g=22239&amp;i=269" class="button">Donate Today</a>
+        <a href="https://oss.ticketmaster.com/aps/tiff/EN/link/buy/details/17SJ050" class="button flat">$50</a>
+        <a href="https://oss.ticketmaster.com/aps/tiff/EN/link/buy/details/17SJ150" class="button flat">$150</a>
+        <a href="https://oss.ticketmaster.com/aps/tiff/EN/link/buy/details/17SJ250" class="button flat">$250</a>
+        <a href="https://oss.ticketmaster.com/aps/tiff/EN/link/donation/donate/browse?g=22239&amp;i=269" class="button flat">OTHER</a>
+    </p>
+    <div id="social">
+        <a href="https://twitter.com/TIFF_net" target="_blank"><i class="mdi mdi-twitter"></i></a>
+        <a href="https://www.facebook.com/TIFF" target="_blank"><i class="mdi mdi-facebook"></i></a>
+        <a href="https://www.instagram.com/tiff_net/" target="_blank"><i class="mdi mdi-instagram"></i></a>
+        <a href="https://www.youtube.com/user/TIFF" target="_blank"><i class="mdi mdi-youtube-play"></i></a>
+    </div>
+</section>
 
+<footer class="credits">
+    <p>Coded by <a href="https://emilydelacruz.com" target="_blank">Emily Dela Cruz</a>.</p>
 </footer>
 
 <footer class="sticky" id="progress-footer">
-    <div class="wide-container progress-container">
-        <div class="progress-container__single" id="progress-start">
+    <div data-scroll-header class="wide-container progress-container">
+        <a data-scroll href="#start" class="progress-container__single" id="progress-start">
             <p class="progress-icons">
                 <i class="material-icons">place</i>
                 <!-- <i class="material-icons">people_outline</i> -->
                 <span>Start</span>
             </p>
-        </div>
+        </a>
 
         <div class="progress-bar">
             <span class="progress-line" id="progress-line--to-goals"></span>
         </div>
 
-        <div class="progress-container__single" id="progress-goals-supporters">
+        <a data-scroll href="#results-goals-supporters" class="progress-container__single" id="progress-goals-supporters">
             <p class="progress-icons">
                 <i class="material-icons">attach_money</i>
                 <!-- <i class="material-icons">people_outline</i> -->
                 <span>Support</span>
             </p>
-        </div>
+        </a>
 
         <div class="progress-bar">
             <span class="progress-line" id="progress-line--to-impressions"></span>
         </div>
         
-        <div class="progress-container__single" id="progress-impressions">
+        <a data-scroll href="#results-impressions" class="progress-container__single" id="progress-impressions">
             <p class="progress-icons">
                 <!-- <i class="material-icons">bubble_chart</i> -->
                 <i class="material-icons">question_answer</i>
                 <span>Social</span>
             </p>    
-        </div>
+        </a>
 
         <div class="progress-bar">
             <span class="progress-line" id="progress-line--to-media"></span>
         </div>
         
-        <div class="progress-container__single" id="progress-media">
+        <a data-scroll href="#results-media" class="progress-container__single" id="progress-media">
             <p class="progress-icons">
                 <i class="material-icons">wifi_tethering</i>
                 <span>Media</span>
             </p>
-        </div>
+        </a>
 
         <div class="progress-bar">
             <span class="progress-line" id="progress-line--to-next"></span>
         </div>
         
-        <div class="progress-container__single" id="progress-whats-next">
+        <a data-scroll href="#results-whats-next" class="progress-container__single" id="progress-whats-next">
             <p class="progress-icons">
                 <i class="material-icons">arrow_forward</i>
                 <!-- <i class="material-icons">refresh</i> -->
                 <span>Next</span>
             </p>
-        </div>
+        </a>
     </div>
     
 </footer>
