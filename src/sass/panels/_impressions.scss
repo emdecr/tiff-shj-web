@@ -1,9 +1,10 @@
 #results-impressions {
-    background: $blue;
+    background: $dblue;
     color: $white;
     // padding-top: 88px;
     text-align: center;
     @media #{$medium-and-up} {
+        background: $blue;
         padding: 72px 0;
     }
     h4 {
@@ -34,7 +35,7 @@
         }
         span {
             position: relative;
-            top: -53px;
+            top: -55px;
             @media #{$medium-and-up} {
                 top: -175px;
             }
@@ -62,7 +63,7 @@
             top: -27px;
         }
         100% {
-            top: -53px;
+            top: -55px;
         }
     }
 }

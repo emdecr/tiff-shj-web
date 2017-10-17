@@ -86,6 +86,14 @@ footer.show {
     }
 }
 
+#icon-one.active,
+#icon-two.active,
+#icon-three.active,
+#icon-four.active,
+#icon-five.active {
+    color: $red;
+}
+
 #progress-goals-supporters {
 
 }
