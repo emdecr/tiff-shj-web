@@ -50,8 +50,11 @@
     }
     cite {
         font-style: normal;
-        margin: 0 0 0 40px;
+        margin: 0 0 0 56px;
         opacity: 0.7;
+        @media #{$medium-and-up} {
+            margin: 0 0 0 40px;       
+        }
         a {
             color: $yellow;
         }
@@ -60,7 +63,8 @@
 
 p.media-number {
     text-align: center;
-    color: $green;
+    // color: $green;
+    // color: $purple;
 }
 
 .media-blocks {
@@ -76,7 +80,8 @@ p.media-number {
     .wide-container {
         @media #{$small-and-down} {
             padding-left: 0;
-            padding-right: 0;        
+            padding-right: 0; 
+            padding-top: 0;       
         }
     }
 }

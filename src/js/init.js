@@ -43,6 +43,14 @@ function meter_shrink_on_scroll(el) {
     el.classList.remove("grow");
 }
 
+function on_animate_scroll(el) {
+    el.classList.add("active");
+}
+
+function off_animate_scroll(el) {
+    el.classList.remove("active");
+}
+
 function isScrolledIntoView(el) {
     scrollpos = window.scrollY;
     var elemTop = el.getBoundingClientRect().top;
@@ -58,7 +66,7 @@ function isScrolledIntoView(el) {
     // document.body.scrollHeight;
 }
 
-function isMeterScrolledIntoView(el) {
+function isTargetScrolledIntoView(el) {
     scrollpos = window.scrollY;
     var elemTop = el.getBoundingClientRect().top;
     var elemBottom = el.getBoundingClientRect().bottom;
@@ -75,6 +83,9 @@ function isMeterScrolledIntoView(el) {
 
 // Meter
 var meter = document.getElementById("the-meter");
+
+// Counter Num
+var counterNum = document.getElementById("animate-number"); 
 
 // Sections
 var goalsSupporters = document.getElementById("results-goals-supporters");
@@ -119,10 +130,17 @@ window.addEventListener('scroll', function(){
     }
     
     // Meter 
-    if (isMeterScrolledIntoView(meter) == true) {
+    if (isTargetScrolledIntoView(meter) == true) {
         meter_grow_on_scroll(meter)
     } else {
         meter_shrink_on_scroll(meter)
+    }
+
+    // Counter
+    if (isTargetScrolledIntoView(counterNum) == true) {
+        on_animate_scroll(counterNum)
+    } else {
+        off_animate_scroll(counterNum)
     }
 
     // Grow/Shrink Progress Bars 

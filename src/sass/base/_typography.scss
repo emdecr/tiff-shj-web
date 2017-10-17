@@ -13,6 +13,7 @@ h1 {
     color: $purple;
     @media #{$small-and-down} {
         margin-top: 20px;
+        line-height: 64px;
     }
     @media #{$medium-and-up} {
         font-size: 80px;
@@ -54,6 +55,17 @@ h5 {
     @media #{$medium-and-up} {
         font-size: 32px;
         line-height: 32px;
+        margin: 0;
+    }
+}
+
+.events-flex-container h5 {
+    font-size: 32px;
+    line-height: 40px;
+    margin-bottom: 0;
+    @media #{$medium-and-up} {
+        font-size: 32px;
+        line-height: 40px;
         margin: 0;
     }
 }
