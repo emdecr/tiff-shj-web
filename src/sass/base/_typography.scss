@@ -9,8 +9,11 @@ h1,h2,h3,h4,h5,h6 {
 h1 {
     // text-align: center;
     margin-bottom: 0;
-    font-size: 40px;
+    font-size: 56px;
     color: $purple;
+    @media #{$small-and-down} {
+        margin-top: 20px;
+    }
     @media #{$medium-and-up} {
         font-size: 80px;
     }
@@ -86,9 +89,9 @@ p {
 }
 
 .med-type {
-    font-size: 32px;
-    line-height: 32px;
-    font-weight: bold;
+    font-size: 28px;
+    line-height: 28px;
+    // font-weight: bold;
     @media #{$medium-and-up} {
         font-size: 32px;
         line-height: 32px;

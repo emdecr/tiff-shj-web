@@ -2,14 +2,24 @@
     background: $blue;
     color: $white;
     // padding-top: 88px;
+    text-align: center;
+    @media #{$medium-and-up} {
+        padding: 72px 0;
+    }
     h4 {
-        font-size: 32px;
-        margin-bottom: 0;
+        font-size: 24px;
+        margin-top: 0;
+        @media #{$medium-and-up} {
+            font-size: 32px;
+            margin-bottom: 0;
+            margin-top: 0;
+        }
     }
 }
 
 #impressions-number {
     color: $purple;
+    margin-bottom: 8px;
 }
 
 .media-explore {
@@ -29,10 +39,11 @@
 }
 
 .embeds {
+    padding: 24px 24px 0;
     @media #{$medium-and-up} {
         display: flex;
         justify-content: space-between;
-        padding: 32px 0;
+        padding: 32px 0 0;
     }
 }
 
@@ -41,6 +52,7 @@
     @media #{$medium-and-up} {
         display: inline-block;
         width: 30%;
+        margin-bottom: 0;
     }
 }
 
@@ -49,6 +61,12 @@
     text-align: center;
     position: relative;
     z-index: 0;
+    @media #{$small-and-down} {
+        margin-bottom: 24px;
+    }
+    @media #{$medium-and-up} {
+        margin: -10px 0;
+    }
     twitterwidget {
         position: relative;
         margin: 0 auto;

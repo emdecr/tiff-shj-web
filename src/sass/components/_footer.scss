@@ -42,7 +42,13 @@ footer.show {
     >p {
         // width: 10%; 
         margin: 0;
-        text-align: center;  
+        text-align: center; 
+        @media #{$small-and-down} {
+            font-size: 10px;
+            i {
+                font-size: 18px;
+            }
+        } 
         span {
             color: rgba(0,0,0,0.5);
             display: block;

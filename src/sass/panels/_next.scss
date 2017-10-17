@@ -1,4 +1,13 @@
 #results-whats-next {
     background: $yellow;
     padding-bottom: 0;
+    @media #{$medium-and-up} {
+        padding: 72px 0;
+    }
+    .container {
+        @media #{$medium-and-up} {
+            padding: 0;
+            max-width: 640px;
+        }
+    }
 }
