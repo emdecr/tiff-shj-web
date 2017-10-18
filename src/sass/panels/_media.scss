@@ -58,6 +58,10 @@
         }
         a {
             color: $yellow;
+            &:hover {
+                color: $orange;
+                border-bottom: 1px solid $orange;
+            }
         }
     }
 }

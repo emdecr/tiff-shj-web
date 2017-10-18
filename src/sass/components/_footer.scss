@@ -84,13 +84,18 @@ footer.show {
     &:hover i {
         color: rgba(0,0,0,0.5);
     }
+    &:hover i.active {
+        color: $red;
+    }
 }
 
-#icon-one.active,
-#icon-two.active,
-#icon-three.active,
-#icon-four.active,
-#icon-five.active {
+.material-icons.progress-icon.active {
+    color: $red;
+} 
+
+.material-icons.progress-icon.active:hover,
+.material-icons.progress-icon.active:active,
+.material-icons.progress-icon.active:focus {
     color: $red;
 }
 
