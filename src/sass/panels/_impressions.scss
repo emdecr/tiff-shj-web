@@ -29,14 +29,27 @@
         height: 64px;
         line-height: 64px;
         @media #{$medium-and-up} {
+            width: 70px;
+            height: 122px;
+            line-height: 170px;
+        }
+        @media #{$large-and-up} {
             width: 120px;
             height: 150px;
+            line-height: 170px;
+        }
+        @media #{$tablet-ls} {
+            width: 80px;
+            height: 130px;
             line-height: 170px;
         }
         span {
             position: relative;
             top: -55px;
             @media #{$medium-and-up} {
+                top: -175px;
+            }
+            @media #{$large-and-up} {
                 top: -175px;
             }
         }
@@ -47,7 +60,7 @@
     -webkit-animation: counter 1.5s 1;
     -moz-animation: counter 1.5s 1;
     animation: counter 1.5s 1;
-    @media #{$medium-and-up} {
+    @media #{$large-and-up} {
         -webkit-animation: counter 2s 1;
         -moz-animation: counter 2s 1;
         animation: counter 2s 1;
@@ -82,6 +95,20 @@
     }
 }
 
+@media #{$large-and-up} {
+    @keyframes counter {
+        0% {
+            top: 0px;
+        }
+        50% {
+            top: -120px;
+        }
+        100% {
+            top: -175px;
+        }
+    }
+}
+
 
 .media-explore {
     // opacity: 0.8;
@@ -100,10 +127,17 @@
 }
 
 .embeds {
-    padding: 24px 24px 0;
+    padding: 24px 0px 0;
     @media #{$medium-and-up} {
         display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        padding: 32px 0 0;
+    }
+    @media #{$large-and-up} {
+        display: flex;
         justify-content: space-between;
+        flex-wrap: wrap;
         padding: 32px 0 0;
     }
 }
@@ -111,8 +145,15 @@
 .twitter-embed,
 .ig-embed {
     @media #{$medium-and-up} {
+        display: block;
+        width: 45%;
+        // margin: 0 3%;
+        margin-bottom: 0;
+    }
+    @media #{$large-and-up} {
         display: inline-block;
         width: 30%;
+        // margin: auto;
         margin-bottom: 0;
     }
 }
@@ -126,6 +167,9 @@
         margin-bottom: 24px;
     }
     @media #{$medium-and-up} {
+        margin: -10px 2% 24px;
+    }
+    @media #{$large-and-up} {
         margin: -10px 0;
     }
     twitterwidget {
@@ -153,14 +197,30 @@
             border: 4px solid rgba(255,255,255,0.5);
             width: 100%;
             height: auto;
+            @media #{$medium-and-up} {
+                margin-bottom: 6px;
+            }
+        }
+        figcaption {
+            font-style: italic
         }
     }
     @media #{$medium-and-up} {
+        padding: 50px 0 0;
+        >div:first-child {
+            padding-bottom: 50px; 
+        }
+    }
+    @media #{$large-and-up} {
         padding: 56px 0;
         display: flex;
         justify-content: space-between;
         > div {
             width: 45%;
+            padding-bottom: 0;
+        }
+        >div:first-child {
+            padding-bottom: 0;
         }
     }
 }

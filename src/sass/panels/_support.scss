@@ -34,6 +34,12 @@
                 margin-bottom: 0;
             }
             @media #{$medium-and-up} {
+                margin-left: -8px;
+                margin-top: 40px;
+                margin-bottom: 0;
+                line-height: 100px;
+            }
+            @media #{$large-and-up} {
                 margin-left: -17px;
                 margin-top: 24px;
                 margin-bottom: 0;
@@ -61,6 +67,12 @@
     position: relative;
     background: lighten($pink, 10);
     @media #{$medium-and-up} {
+        height: 332px;
+        width: 54px;
+        margin: 32px 56px 0 0;
+    }
+    @media #{$large-and-up} {
+        height: 60vh;
         width: 54px;
         margin: 32px 56px 0 0;
     }

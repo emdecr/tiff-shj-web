@@ -2,6 +2,10 @@ body {
     margin: 0;
 }
 
+.mt24 {
+    margin-top: 24px !important; 
+}
+
 .fixed-show-grid {
     display: none;
     position: fixed;
@@ -29,7 +33,7 @@ section {
     position: relative;
     // min-height: 100vh;
     vertical-align: middle;
-    @media #{$medium-and-up} {
+    @media #{$large-and-up} {
         padding: 56px 0;
     }
 }
@@ -41,7 +45,7 @@ section {
     max-width: 960px;
     margin: 0 auto;
     padding: 56px 24px;
-    @media #{$medium-and-up} {
+    @media #{$large-and-up} {
         padding: 56px 0;
     }
 }
@@ -50,15 +54,21 @@ section {
     max-width: 1120px;
     margin: 0 auto;
     padding: 0 20px;
-    @media #{$medium-and-up} {
+    @media #{$large-and-up} {
         padding: 0;
+    }
+    @media #{$tablet-ls} {
+        padding: 0 32px;
     }
 }
 
 section .wide-container {
     padding: 40px 20px;
     @media #{$medium-and-up} {
-        padding: 0;
+        padding: 40px 32px;
+    }
+    @media #{$large-and-up} {
+        padding: 0 32px;
     }
 }
 
@@ -74,13 +84,13 @@ section .wide-container {
 }
 
 .shift-2 {
-    @media #{$medium-and-up} {
+    @media #{$large-and-up} {
         margin-left: 16.66666667% !important;
     }
 }
 
 .shift-3 {
-    @media #{$medium-and-up} {
+    @media #{$large-and-up} {
         margin-left: 25% !important;
     }
 }
@@ -90,13 +100,13 @@ section .wide-container {
 }
 
 .col-6 {
-    @media #{$medium-and-up} {
+    @media #{$large-and-up} {
         width: 50%;
     }
 }
 
 .col-8 {
-    @media #{$medium-and-up} {
+    @media #{$large-and-up} {
         width: 66.66666667%;
     }
 }

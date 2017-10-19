@@ -133,6 +133,10 @@ footer.show {
     padding-top: 0;
     p {
         margin: 0;
+        @media #{$small-and-down} {
+            width: 80%;
+            margin: 0 auto;
+        }
     }
     .button {
         display: inline-block;
@@ -179,6 +183,11 @@ footer.credits {
         font-size: 12px;
         margin: 0;
         opacity: 0.3;
+        @media #{$small-and-down} {
+            width: 80%;
+            margin: 0 auto 16px;
+            line-height: 16px;
+        }
         a {
             border-bottom: 1px solid $black;
         }

@@ -27,7 +27,7 @@ nav {
 ul.first-nav {
     padding-top: 16px;
     padding-bottom: 16px;
-    @media #{$medium-and-up} {
+    @media #{$large-and-up} {
         padding-top: 24px;
         padding-bottom: 0;
         display: flex;
@@ -39,12 +39,12 @@ ul.first-nav {
     img {
         max-width: 42px;
         height: auto;
-        @media #{$medium-and-up} {
+        @media #{$large-and-up} {
             max-width: 88px;
         }
     }
     li:first-child {
-        @media #{$small-and-down} {
+        @media #{$medium-and-down} {
             text-align: center;
         }
     }
@@ -56,7 +56,7 @@ ul.first-nav {
         a:first-child {
             margin-right: 24px;
         }
-        @media #{$small-and-down} {
+        @media #{$medium-and-down} {
             display: none;
         }
     }
@@ -67,7 +67,7 @@ ul.first-nav {
         &:hover {
             cursor: pointer;
         }
-        @media #{$medium-and-up} {
+        @media #{$large-and-up} {
             display: none;
         }
     }
@@ -77,7 +77,7 @@ ul.first-nav.up {
     position: relative;
     opacity: 1;
     top: 0px;
-    @media #{$medium-and-up} {
+    @media #{$large-and-up} {
         position: absolute;
         top: -100px;
         opacity: 0;
@@ -86,7 +86,7 @@ ul.first-nav.up {
 
 ul.second-nav {
     display: none;
-    @media #{$medium-and-up} {
+    @media #{$large-and-up} {
         display: flex;
         justify-content: space-between;
         align-content: center;
